@@ -64,7 +64,7 @@ class GameVC: UIViewController {
                 button.alpha = 1.0
             } else {
                 button.setTitle("", for: UIControlState.normal)
-                button.backgroundColor = card.isMatched ? UIColor.clear : #colorLiteral(red: 1, green: 0.5781051517, blue: 0, alpha: 1)
+                button.backgroundColor = card.isMatched ? UIColor.clear : #colorLiteral(red: 0, green: 0.5572491288, blue: 1, alpha: 1)
             }
             
             if card.isMatched == true {
@@ -99,7 +99,7 @@ class GameVC: UIViewController {
         print("emoji \(emoji)")
         if button.currentTitle == emoji {
             button.setTitle("", for: UIControlState.normal)
-            button.backgroundColor = #colorLiteral(red: 1, green: 0.5781051517, blue: 0, alpha: 1)
+            button.backgroundColor = #colorLiteral(red: 0, green: 0.5572491288, blue: 1, alpha: 1)
         } else {
             button.setTitle(emoji, for: UIControlState.normal)
             button.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
